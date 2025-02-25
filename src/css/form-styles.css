@@ -1,0 +1,64 @@
+.feedback-form {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 408px;
+  padding: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.feedback-form > label {
+  display: block;
+  color: #2e2f42;
+}
+
+.feedback-form > label:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.feedback-form > label:last-child {
+  margin-bottom: 16px;
+}
+
+.feedback-form :is(input, textarea) {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  transition: border-color, 300ms ease-in;
+  width: 100%;
+}
+
+.feedback-form :is(input, textarea):is(:hover, :focus) {
+  border-color: #000;
+  outline: none;
+}
+
+.feedback-form :is(input, textarea):active {
+  border-color: #808080;
+}
+
+.feedback-form input {
+  height: 40px;
+}
+
+.feedback-form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.feedback-form button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 95px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  color: #fff;
+  transition: background-color, 300ms ease-in;
+}
+
+.feedback-form button:is(:hover, :focus) {
+  background-color: #6c8cff;
+}
