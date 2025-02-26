@@ -47,4 +47,6 @@ function submitForm(event) {
   formFeedBack.reset();
   console.log(formData);
   localStorage.removeItem('feedback-form-state');
+  formData.email = '';
+  formData.message = '';
 }
